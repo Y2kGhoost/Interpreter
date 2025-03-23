@@ -33,11 +33,11 @@ Here you scan two numbers and add them. <br>
 
 `sub` : Subtract two numbers. <br>
 
-`mult` : Multiply two numbers <br>
+`mult` : Multiply two numbers. <br>
 
-`div` : Divise two numbers <br>
+`div` : Divise two numbers. <br>
 
-`mod` : Module of two numbers <br>
+`mod` : Module of two numbers. <br>
 
 `jump.eq.0 <label>` : Jump if equal 0. Example:
 ```
