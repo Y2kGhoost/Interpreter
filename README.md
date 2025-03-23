@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-
-=======
->>>>>>> 6cac9d4cc7eeaab9578789cb42bedcfca9484e4a
 # JRot
 **JRot** is a mini interpreter with java based on the **stack** data structur.
 
@@ -46,8 +42,8 @@ Here you scan two numbers and add them. <br>
 `jump.eq.0 <label>` : Jump if equal 0. Example:
 ```
 L1:
-dih
-dih
+dih "A: "
+dih "B: "
 
 sub
 jump.eq.0 L1
