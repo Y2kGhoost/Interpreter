@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6cac9d4cc7eeaab9578789cb42bedcfca9484e4a
 # JRot
 **JRot** is a mini interpreter with java based on the **stack** data structur.
 
@@ -19,14 +22,14 @@ foo@bar:~$ java Interpreter Program.jrot
 
 ## Syntax
 
-`pmo` : Print. Example: `pmo "Hello World"`. <br>
+`pmo "<Message>"` : Print. Example: `pmo "Hello World"`. <br>
 
-`dih` : Scan without promet the user. <br>
+`dih "<Message>"` : Scan with promet the user. <br>
 
 `add` : Add two numbers. Example:  
 ```
-dih
-dih
+dih "A: "
+dih "B: "
 
 add
 ```
@@ -34,7 +37,13 @@ Here you scan two numbers and add them. <br>
 
 `sub` : Subtract two numbers. <br>
 
-`jump.eq.0` : Jump if equal 0. Example:
+`mult` : Multiply two numbers <br>
+
+`div` : Divise two numbers <br>
+
+`mod` : Module of two numbers <br>
+
+`jump.eq.0 <label>` : Jump if equal 0. Example:
 ```
 L1:
 dih
@@ -45,9 +54,9 @@ jump.eq.0 L1
 ```
 `L1` is a label, you can create multipal labels. Also you can use them as Loop. <br>
 
-`jump.gt.0` : Jump if greater than 0. <br>
+`jump.gt.0 <label>` : Jump if greater than 0. <br>
 
-`push` : Push a number into the stack. Example:
+`push <number>` : Push a number into the stack. Example:
 ```
 push 1
 push 1
@@ -55,12 +64,12 @@ add
 ```
 <br>
 
-`pop` : Pop a number from the stack.<br>
+`pop <number>` : Pop a number from the stack.<br>
 
 `veiny` : Exit the program. Example:
 ```
-dih
-dih
+dih "A: "
+dih "B: "
 sub
 
 jump.eq.0 L1
@@ -71,6 +80,8 @@ L1:
 pmo "Not Equal"
 veiny
 ```
+
+`# <Message>` : Comments <br>
 
 ## Credit 
 
